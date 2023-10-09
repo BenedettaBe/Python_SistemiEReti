@@ -1,0 +1,3 @@
+PYTHON
+Interprete: NON compila, non crea un file eseguibile
+		
