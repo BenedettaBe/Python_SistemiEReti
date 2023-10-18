@@ -1,5 +1,6 @@
+#scrivi un programma che permetta di effettuare le 4 operazioni aritmetiche
 def main():
-    for i in range(0,3):
+    for i in range(0,4):
         segno = int(input("Inserisci segno: "))
         num1 = int(input("Inserisci numero: "))
         num2 = int(input("Inserisci numero: "))

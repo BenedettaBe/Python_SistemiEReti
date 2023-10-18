@@ -1,3 +1,4 @@
+#stampa a video se un numero (chiesto all'utente) è divisibile per 2, o per 3, o per 5, o per nessuno di essi
 def main():
     num = int(input("Inserisci numero: "))
     div = 3
