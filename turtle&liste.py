@@ -1,3 +1,4 @@
+#memoriazzare in una lista i comandi della turtle chiesti da tastiera e dopo eseguirli
 import turtle
 def eseguiComandi(lista):
     finestra = turtle.Screen()

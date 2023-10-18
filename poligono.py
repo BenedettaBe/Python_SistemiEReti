@@ -1,3 +1,4 @@
+#disegnare un poligono con n lati e lunghezza dei lati chiesti da tastiera
 import turtle #esempio di importazione di un modulo built-in
 
 num = int(input("inserire il numero: "))
