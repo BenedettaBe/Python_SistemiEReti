@@ -3,26 +3,28 @@
     - aggiungere il valore 5 alla lista della prima metà
 """
 
+def print_list(l):
+    for elemento in l:
+        print(elemento, end=" ")
+    print()
+
 def main():
     x = [0,1,2,3,5,6,7,8]
     l1=[]
     l2 = []
 
-    for k in x [0:4] :
-        l1.append(k)
-    l1.append(5)
+    mezzo = len(x)//2 #// divisione intera
 
-    for k in x [4:8] :
-        l2.append(k) 
+    l1 = x[:mezzo]
+    l2 = x[mezzo:]
     
+    l1.append(l2[0])
+
     print("prima metà")
-    for k in l1:
-        print(k, end="\t")
-    print()
+    print_list(l1)
 
     print("seconda metà")
-    for k in l2:
-        print(k, end="\t")
+    print_list(l2)
 
 if __name__ == "__main__":
     main()
