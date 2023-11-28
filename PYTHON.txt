@@ -1,3 +1,11 @@
 PYTHON
 Interprete: NON compila, non crea un file eseguibile
+lento(non sempre)
+multipiattaforma: si può utilizzare su tutti i sistemi operativi
+
 		
+
+C
+compilato
+veloce
+no multipiattaforma
