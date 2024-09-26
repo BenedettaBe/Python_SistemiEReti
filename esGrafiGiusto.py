@@ -2,6 +2,15 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 
+def creaMatrice(dizR):
+    n  = len(dizR)
+    mat= [[0]*n for _ in range (n)]
+    l2 = []
+    for k, v in dizR.items():
+        for  h in v:
+            mat[k][h] = 1
+    return mat        
+    
 def prettyPrint(matrice, separatore = " "):
     for riga in matrice:
         rigaStr=[str(x) for x in riga]
@@ -9,11 +18,10 @@ def prettyPrint(matrice, separatore = " "):
 
 def diz_inverso(matrice):
     d = {i: [] for i in range(len(matrice))}
-    k=0
-    for riga in matrice:
-        for num in riga:
-            d[k].append(num)
-        k+=1
+    for k, riga in enumerate(matrice):
+        for j, num in enumerate(riga):
+            if num == 1:
+                d[k].append(j)
 
     print(d)
 
@@ -40,12 +48,7 @@ def disegnaGrafo(matrice_adiacenza):
 
 def main():
     dizR = {0:[2,3], 1:[2,4], 2:[0,1,3], 3:[0,2,4], 4:[1,3]}
-    n  = len(dizR)
-    mat= [[0]*n for _ in range (n)]
-    l2 = []
-    for k, v in dizR.items():
-        for  h in v:
-            mat[k][h] = 1      
+    mat = creaMatrice(dizR)
     prettyPrint(mat,)
     diz_inverso(mat)
 
